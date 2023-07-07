@@ -4,8 +4,6 @@ import { uid } from 'uid'
 import TodoCreator from '../components/TodoCreator.vue'
 import TodoItem from '../components/TodoItem.vue'
 import TodoItemVue from '../components/TodoItem.vue'
-import { Icon } from '@iconify/vue'
-
 const todoList = ref([])
 
 const createToDo = todo => {
