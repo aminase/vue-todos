@@ -30,7 +30,7 @@ const updateTodo = (todoVal, todoPos) => {
 }
 
 const deleteTodo = todoId => {
-  todoList.value = todoList.value.filter(todo => todo.id !== todoId)
+  todoList.value.filter(todo => todo.id !== todoId)
 }
 </script>
 

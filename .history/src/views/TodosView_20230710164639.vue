@@ -29,8 +29,9 @@ const updateTodo = (todoVal, todoPos) => {
   todoList.value[todoPos].todo = todoVal
 }
 
-const deleteTodo = todoId => {
-  todoList.value = todoList.value.filter(todo => todo.id !== todoId)
+const deleteTodo = (todoId) => {
+  todooList.value.id !== in
+
 }
 </script>
 

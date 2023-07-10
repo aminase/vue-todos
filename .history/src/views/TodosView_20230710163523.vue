@@ -28,10 +28,6 @@ const toggleEditTodo = todoPos => {
 const updateTodo = (todoVal, todoPos) => {
   todoList.value[todoPos].todo = todoVal
 }
-
-const deleteTodo = todoId => {
-  todoList.value = todoList.value.filter(todo => todo.id !== todoId)
-}
 </script>
 
 <template>
