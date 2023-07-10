@@ -2,8 +2,8 @@
 
 <template>
   <div class="about">
-    <h1 class="title">View Todos</h1>
-    <p class="about-msg">
+    <h1>View Todos</h1>
+    <p :class="about - msg">
       Todo App created in Vue 3 is CRUD app.
       <br />
       Track your daily tasks's using this todo tracker with abilities to save, complete, edit &
@@ -23,13 +23,7 @@
 .about-msg {
   margin-top: 6px;
   font-size: 12px;
-  display: flex;
-  justify-content: center;
   text-align: center;
-}
-.title {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+  color: red;
 }
 </style>

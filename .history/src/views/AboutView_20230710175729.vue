@@ -2,7 +2,7 @@
 
 <template>
   <div class="about">
-    <h1 class="title">View Todos</h1>
+    <h1>View Todos</h1>
     <p class="about-msg">
       Todo App created in Vue 3 is CRUD app.
       <br />
@@ -26,10 +26,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-}
-.title {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+  color: red;
 }
 </style>

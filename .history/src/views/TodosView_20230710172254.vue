@@ -80,10 +80,6 @@ const deleteTodo = todoId => {
       <Icon icon="noto-v1:sad-but-relieved-face" />
       <span>You have no todo's to complete! Add one!</span>
     </p>
-    <p v-if="todoCompleted && todoList.length > 0" :class="todos - msg">
-      <Icon icon="noto-v1:part-popper" />
-      <span>You have to completed all your todos!</span>
-    </p>
   </main>
 </template>
 
