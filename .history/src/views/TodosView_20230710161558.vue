@@ -20,10 +20,6 @@ const createToDo = todo => {
 const toggleTodoComplete = todoPos => {
   todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
 }
-
-const toggleEditTodo = todoPos => {
-  todoList.value[todoPos].isEditing = !todoList.value[todoPos].isEditing
-}
 </script>
 
 <template>
@@ -36,7 +32,7 @@ const toggleEditTodo = todoPos => {
         :todo="todo"
         :index="index"
         @toggle-complete="toggleTodoComplete"
-        @edit-todo="toggleEditTodo"
+        @edit-todo="toggleEditToDo"
       />
     </ul>
 

@@ -22,7 +22,7 @@ const toggleTodoComplete = todoPos => {
 }
 
 const toggleEditTodo = todoPos => {
-  todoList.value[todoPos].isEditing = !todoList.value[todoPos].isEditing
+  todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
 }
 </script>
 

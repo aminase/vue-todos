@@ -21,9 +21,7 @@ const toggleTodoComplete = todoPos => {
   todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
 }
 
-const toggleEditTodo = todoPos => {
-  todoList.value[todoPos].isEditing = !todoList.value[todoPos].isEditing
-}
+const toggleEditTodo = todoPos => {}
 </script>
 
 <template>

@@ -11,7 +11,7 @@ const props = defineProps({
   },
 })
 
-defineEmits(['toggle-complete', 'edit-todo'])
+defineEmits(['toggle-complete'])
 </script>
 
 <template>
@@ -31,14 +31,8 @@ defineEmits(['toggle-complete', 'edit-todo'])
         color="41b080"
         width="22"
       />
-      <Icon
-        v-else
-        icon="ph:pencil-fill"
-        class="icon edit-icon"
-        color="41b080"
-        width="22"
-        @click="$emit('edit-todo', index)"
-      />
+      <Icon v-else icon="ph:pencil-fill" class="icon edit-icon" color="41b080" width="22"
+      @click="$emit("edit-todo")/>
       <Icon icon="ph:trash" class="icon trash-icon" color="f95e5e" width="22" />
     </div>
   </li>
