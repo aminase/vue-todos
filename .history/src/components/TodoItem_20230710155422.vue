@@ -18,8 +18,13 @@ defineEmits(['toggle-complete'])
   <li>
     <input type="checkbox" :checked="todo.isCompleted" @input="$emit('toggle-complete', index)" />
     <div class="todo">
-      <input v-if="todo.isEditing" type="text" :value="todo.todo" />
-      <span v-else :class="{ 'completed-todo': todo.isCompleted }">
+      <input
+        v-if="todo.isEditing"
+        type="text"
+        :value="todo.todo"
+        :class="{ 'completed-todo': todo.isCompleted }"
+      />
+      <span v-else>
         {{ todo.todo }}
       </span>
     </div>
@@ -69,7 +74,6 @@ li {
     flex: 1;
 
     .completed-todo {
-      text-decoration: line-through;
     }
     input[type='text'] {
       width: 100%;

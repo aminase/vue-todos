@@ -17,9 +17,7 @@ const createToDo = todo => {
   })
 }
 
-const toggleTodoComplete = todoPos => {
-  todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
-}
+const toggleTodoComplete = index => {}
 </script>
 
 <template>

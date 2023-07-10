@@ -10,16 +10,14 @@ const props = defineProps({
     required: true,
   },
 })
-
-defineEmits(['toggle-complete'])
 </script>
 
 <template>
   <li>
-    <input type="checkbox" :checked="todo.isCompleted" @input="$emit('toggle-complete', index)" />
+    <input type="checkbox" :checked="todo.isCompleted" @input=$emit('toggle-complete', index)"/>
     <div class="todo">
       <input v-if="todo.isEditing" type="text" :value="todo.todo" />
-      <span v-else :class="{ 'completed-todo': todo.isCompleted }">
+      <span v-else>
         {{ todo.todo }}
       </span>
     </div>
@@ -68,9 +66,6 @@ li {
   .todo {
     flex: 1;
 
-    .completed-todo {
-      text-decoration: line-through;
-    }
     input[type='text'] {
       width: 100%;
       padding: 2px 6px;

@@ -16,10 +16,6 @@ const createToDo = todo => {
     isEditing: null,
   })
 }
-
-const toggleTodoComplete = todoPos => {
-  todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
-}
 </script>
 
 <template>
