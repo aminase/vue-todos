@@ -11,19 +11,14 @@ const props = defineProps({
   },
 })
 
-defineEmits(['toggle-complete', 'edit-todo', 'update-todo'])
+defineEmits(['toggle-complete', 'edit-todo'])
 </script>
 
 <template>
   <li>
     <input type="checkbox" :checked="todo.isCompleted" @input="$emit('toggle-complete', index)" />
     <div class="todo">
-      <input
-        v-if="todo.isEditing"
-        type="text"
-        :value="todo.todo"
-        @input="$emit('update-todo', $event.target.value, index)"
-      />
+      <input v-if="todo.isEditing" type="text" :value="todo.todo" />
       <span v-else :class="{ 'completed-todo': todo.isCompleted }">
         {{ todo.todo }}
       </span>

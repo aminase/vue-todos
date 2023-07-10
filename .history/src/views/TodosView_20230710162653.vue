@@ -25,9 +25,7 @@ const toggleEditTodo = todoPos => {
   todoList.value[todoPos].isEditing = !todoList.value[todoPos].isEditing
 }
 
-const updateTodo = (todoVal, todoPos) => {
-  todoList.value[todoPos].todo = todoVal
-}
+const updateTodo = (todoVal, todoPos) => {}
 </script>
 
 <template>

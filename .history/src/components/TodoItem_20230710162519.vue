@@ -11,7 +11,7 @@ const props = defineProps({
   },
 })
 
-defineEmits(['toggle-complete', 'edit-todo', 'update-todo'])
+defineEmits(['toggle-complete', 'edit-todo'])
 </script>
 
 <template>
@@ -22,7 +22,7 @@ defineEmits(['toggle-complete', 'edit-todo', 'update-todo'])
         v-if="todo.isEditing"
         type="text"
         :value="todo.todo"
-        @input="$emit('update-todo', $event.target.value, index)"
+        @input="$emit('update-todo', $event.target.value)"
       />
       <span v-else :class="{ 'completed-todo': todo.isCompleted }">
         {{ todo.todo }}

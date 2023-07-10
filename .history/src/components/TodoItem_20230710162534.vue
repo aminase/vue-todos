@@ -11,7 +11,7 @@ const props = defineProps({
   },
 })
 
-defineEmits(['toggle-complete', 'edit-todo', 'update-todo'])
+defineEmits(['toggle-complete', 'edit-todo'])
 </script>
 
 <template>
