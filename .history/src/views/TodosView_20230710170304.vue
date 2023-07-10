@@ -15,9 +15,7 @@ const fetchTodoList = () => {
   }
 }
 
-//each time page is loaded function is called
 fetchTodoList()
-
 const setTodoListLocalStorage = () => {
   localStorage.setItem('todoList', JSON.stringify(todoList.value))
 }
@@ -29,27 +27,22 @@ const createToDo = todo => {
     isCompleted: null,
     isEditing: null,
   })
-  setTodoListLocalStorage()
 }
 
 const toggleTodoComplete = todoPos => {
   todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
-  setTodoListLocalStorage()
 }
 
 const toggleEditTodo = todoPos => {
   todoList.value[todoPos].isEditing = !todoList.value[todoPos].isEditing
-  setTodoListLocalStorage()
 }
 
 const updateTodo = (todoVal, todoPos) => {
   todoList.value[todoPos].todo = todoVal
-  setTodoListLocalStorage()
 }
 
 const deleteTodo = todoId => {
   todoList.value = todoList.value.filter(todo => todo.id !== todoId)
-  setTodoListLocalStorage()
 }
 </script>
 

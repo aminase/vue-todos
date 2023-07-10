@@ -34,22 +34,18 @@ const createToDo = todo => {
 
 const toggleTodoComplete = todoPos => {
   todoList.value[todoPos].isCompleted = !todoList.value[todoPos].isCompleted
-  setTodoListLocalStorage()
 }
 
 const toggleEditTodo = todoPos => {
   todoList.value[todoPos].isEditing = !todoList.value[todoPos].isEditing
-  setTodoListLocalStorage()
 }
 
 const updateTodo = (todoVal, todoPos) => {
   todoList.value[todoPos].todo = todoVal
-  setTodoListLocalStorage()
 }
 
 const deleteTodo = todoId => {
   todoList.value = todoList.value.filter(todo => todo.id !== todoId)
-  setTodoListLocalStorage()
 }
 </script>
 

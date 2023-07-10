@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { uid } from 'uid'
 import TodoCreator from '../components/TodoCreator.vue'
 import TodoItem from '../components/TodoItem.vue'

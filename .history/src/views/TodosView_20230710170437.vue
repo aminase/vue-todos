@@ -44,12 +44,11 @@ const toggleEditTodo = todoPos => {
 
 const updateTodo = (todoVal, todoPos) => {
   todoList.value[todoPos].todo = todoVal
-  setTodoListLocalStorage()
+  setTodoListLocalStorage
 }
 
 const deleteTodo = todoId => {
   todoList.value = todoList.value.filter(todo => todo.id !== todoId)
-  setTodoListLocalStorage()
 }
 </script>
 
